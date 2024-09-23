@@ -1,11 +1,12 @@
 #include <iostream>
-#include "01 - Syntax.cpp"
+#include "Basics.h"
 
 using namespace std;
 
 int main()
 {
-    SyntaxExample();
+    Basics basics;
+    basics.Strings();
 
     return 0;
 }
