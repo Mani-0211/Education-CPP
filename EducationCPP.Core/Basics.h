@@ -7,4 +7,7 @@ class Basics
 		void DataTypes();
 		void Operators();
 		void Strings();
+		void Math();
+		void ConditionalStatements();
+		void LoopingStatements();
 };

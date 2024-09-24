@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 #include "Basics.h"
 
@@ -157,4 +158,97 @@ void Basics::Strings()
 	cout << "Enter your name (Pika Pikachu): ";
 	getline(cin, strName);
 	cout << "Entered Name (cin used) - " << strName << "\n";
+}
+
+void Basics::Math()
+{
+	// Max
+	cout << "Max value (10, 20) : " << max(10, 20) << "\n";
+
+	// Min
+	cout << "Min value (10, 20) : " << min(10, 20) << "\n";
+
+	// cmath library functions
+	cout << "Square root of 64  : " << sqrt(64) << "\n";
+
+	cout << "Round value of 2.4 : " << round(2.4) << "\n";
+	cout << "Round value of 2.6 : " << round(2.6) << "\n";
+
+	cout << "Log value of 25    : " << log(25) << "\n";
+}
+
+void Basics::ConditionalStatements()
+{
+	// Normal If Else
+	int nAge;
+
+	cout << "Enter your age : ";
+	cin >> nAge;
+
+	if (nAge < 0) 
+	{
+		cout << "Please enter a valid age...\n\n";
+	}
+	else if (nAge > 50)
+	{
+		cout << "You are too old...\n\n";
+	}
+	else
+	{
+		cout << "You are age between 1 to 50...\n\n";
+	}
+
+	// Short hand If Else
+	cout << "Short hand if else statement : " << ((nAge > 0) ? "Correct Age..." : "Invalid Age") << "\n";
+}
+
+void Basics::LoopingStatements()
+{
+	int nInitial = 0;
+
+	// While loop
+	cout << "While loop - ";
+
+	while (nInitial < 5)
+	{
+		cout << ++nInitial << " ";
+	}
+
+	cout << "\n\n";
+
+	// For loop
+	cout << "For loop - ";
+
+	for (int i = 10; i <= 50; i += 10)
+	{
+		cout << i << " ";
+	}
+
+	cout << "\n\n";
+
+	// Foreach loop
+	string strName = "Pikachu";
+
+	cout << "Foreach loop - ";
+
+	for (char cLetter : strName)
+	{
+		cout << cLetter << " ";
+	}
+
+	cout << "\n\n";
+
+	// Break and Continue
+	cout << "Break and continue., continue 4., break on 8..,\n";
+
+	for (int i = 1; i < 11; i++)
+	{
+		if (i == 4) continue;
+
+		if (i == 8) break;
+
+		cout << i << " ";
+	}
+
+	cout << "\n";
 }
