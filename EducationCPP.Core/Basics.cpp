@@ -252,3 +252,69 @@ void Basics::LoopingStatements()
 
 	cout << "\n";
 }
+
+void Basics::Structures()
+{
+	// Plain Structs
+	struct
+	{
+		int nCount;
+		string strValue;
+	} stDetail, stDetail2;
+
+	stDetail.nCount = 1;
+	stDetail.strValue = "Pikachu! - 1";
+
+	stDetail2.nCount = 2;
+	stDetail2.strValue = "Pikachu! - 2";
+
+	cout << "Plain Structs:\n";
+	cout << "Detail - 1 - Count: " << stDetail.nCount << "\n";
+	cout << "Detail - 1 - Value: " << stDetail.strValue << "\n\n";
+
+	cout << "Detail - 2 - Count: " << stDetail2.nCount << "\n";
+	cout << "Detail - 2 - Value: " << stDetail2.strValue << "\n\n";
+
+	// Named Structs
+	struct StudentDetail
+	{
+		int RollNumber;
+		string Name;
+	};
+
+	StudentDetail pikachu1;
+	pikachu1.RollNumber = 101;
+	pikachu1.Name = "Pikachu - 1";
+
+	StudentDetail pikachu2;
+	pikachu2.RollNumber = 102;
+	pikachu2.Name = "Pikachu - 2";
+
+	cout << "Named Structs:\n";
+	cout << "Student - 1 - Roll No.	: " << pikachu1.RollNumber << "\n";
+	cout << "Detail - 1 - Name	: " << pikachu1.Name << "\n\n";
+
+	cout << "Student - 2 - Roll No.	: " << pikachu2.RollNumber << "\n";
+	cout << "Detail - 2 - Name	: " << pikachu2.Name << "\n\n";
+}
+
+void Basics::Enumeration()
+{
+	enum Level
+	{
+		Easy = 25,
+		Medium = 50,
+		Hard = 75,
+		VeryHard = 100
+	};
+
+	enum Level easy = Easy;
+	enum Level medium = Medium;
+	enum Level hard = Hard;
+	enum Level very_hard = VeryHard;
+
+	cout << "Level - Easy - " << easy << "\n";
+	cout << "Level - Medium - " << medium << "\n";
+	cout << "Level - Hard - " << hard << "\n";
+	cout << "Level - VeryHard - " << very_hard << "\n";
+}

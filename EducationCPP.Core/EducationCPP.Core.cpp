@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     Basics basics;
-    basics.LoopingStatements();
+    basics.Enumeration();
 
     return 0;
 }

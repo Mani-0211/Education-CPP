@@ -10,4 +10,6 @@ class Basics
 		void Math();
 		void ConditionalStatements();
 		void LoopingStatements();
+		void Structures();
+		void Enumeration();
 };
