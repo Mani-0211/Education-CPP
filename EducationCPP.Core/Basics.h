@@ -12,4 +12,6 @@ class Basics
 		void LoopingStatements();
 		void Structures();
 		void Enumeration();
+		void References();
+		void Pointers();
 };

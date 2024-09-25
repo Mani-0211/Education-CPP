@@ -318,3 +318,33 @@ void Basics::Enumeration()
 	cout << "Level - Hard - " << hard << "\n";
 	cout << "Level - VeryHard - " << very_hard << "\n";
 }
+
+void Basics::References()
+{
+	string name = "Pikachu";
+	string& name_reference = name;
+
+	cout << "Reference:\n";
+	cout << "Name - " << name << "\n";
+	cout << "Name Reference - " << name_reference << "\n";
+	cout << "Memory Address - " << &name << "\n\n";
+}
+
+void Basics::Pointers()
+{
+	// Creating Pointers
+	string name = "pikachu";
+	string* name_ptr = &name;
+
+	cout << "Name	: " << name << "\n";
+	cout << "Address	: " << name_ptr << "\n\n";
+
+	// Dereferencing
+	cout << "Dereference :" << *name_ptr << "\n\n";
+
+	// Modify Pointers
+	cout << "Name	: " << name << "\n";
+
+	*name_ptr = "pikachu changed by pointer";
+	cout << "Name after change the pointer value : " << name << "\n";
+}
