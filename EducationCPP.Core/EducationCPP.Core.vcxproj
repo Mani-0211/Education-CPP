@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Basics.cpp" />
+    <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="EducationCPP.Core.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basics.h" />
+    <ClInclude Include="DataStructure.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,9 +24,15 @@
     <ClCompile Include="Basics.cpp">
       <Filter>Source Files\Samples</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure.cpp">
+      <Filter>Source Files\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
