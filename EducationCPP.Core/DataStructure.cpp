@@ -2,6 +2,8 @@
 #include <vector>
 #include <stack>
 #include <queue>
+#include <deque>
+#include <set>
 
 #include "DataStructure.h"
 
@@ -114,4 +116,104 @@ void DataStructure::Queue()
 
 	cout << "queue size after removed the values - " << fruits.size() << "\n";
 	cout << "first item after removed the values - " << fruits.front() << "\n\n";
+}
+
+void DataStructure::Deque()
+{
+	// create a deque
+	deque<int> numbers;
+			
+	// add values to front
+	numbers.push_front(3);
+	numbers.push_front(2);
+	numbers.push_front(1);
+
+	// add values to back
+	numbers.push_back(4);
+	numbers.push_back(5);
+
+	// is deque empty?
+	cout << "is deque empty - " << numbers.empty() << "\n\n";
+
+	// size of a deque
+	cout << "size of the deque - " << numbers.size() << "\n\n";
+
+	// access front and back items
+	cout << "first item of the deque - " << numbers.front() << "\n";
+	cout << "last item of the deque - " << numbers.back() << "\n\n";
+
+	// access values index based
+	cout << "item at the index 2 - " << numbers.at(2) << "\n\n";
+
+	// change values index based
+	numbers.at(1) = 22;
+	cout << "after change the item in index 1 as 22 - " << numbers.at(1) << "\n\n";
+
+	// loop through a deque using for loop
+	cout << "loop through a deque using for loop:\n";
+
+	for (int i = 0; i < numbers.size(); i++)
+	{
+		cout << numbers.at(i) << " ";
+	}
+
+	cout << "\n";
+
+	// loop through a deque using for each loop
+	cout << "loop through a deque using for each loop:\n";
+
+	for (int number : numbers)
+	{
+		cout << number << " ";
+	}
+
+	cout << "\n";
+}
+
+void DataStructure::Set()
+{
+	// create a set
+	set<int> numbers;
+
+	// add items
+	numbers.insert(1);
+	numbers.insert(2);
+	numbers.insert(2);
+	numbers.insert(3);
+	numbers.insert(4);
+
+	// remove items
+	numbers.erase(3);
+
+	// loop through using for each loop (indexing not allowed. so, for loop not possible)
+	cout << "iterating a set using for each loop. (indexing not allowed. so, for loop not possible) :\n";
+	
+	for (int number : numbers)
+	{
+		cout << number << " ";
+	}
+
+	cout << "\n\n";
+
+	// is empty? size and clear operations
+	cout << "is empty - " << numbers.empty() << "\n";
+	cout << "size - " << numbers.size() << "\n\n";
+
+	numbers.clear();
+
+	cout << "after cleared a set: \n";
+	cout << "is empty - " << numbers.empty() << "\n";
+	cout << "size - " << numbers.size() << "\n\n";
+
+	// sort by descending order (by default it is in ascending order)
+	set<int, greater<int>> numbers_as_desc = { 3, 4, 7, 3, 2 };
+
+	cout << "descending order set :\n";
+
+	for (int number : numbers_as_desc)
+	{
+		cout << number << " ";
+	}
+
+	cout << "\n\n";
 }

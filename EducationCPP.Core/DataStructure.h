@@ -4,4 +4,6 @@ class DataStructure
 		void Vector();
 		void Stack();
 		void Queue();
+		void Deque();
+		void Set();
 };

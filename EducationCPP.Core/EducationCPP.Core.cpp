@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     DataStructure data_structure;
-    data_structure.Queue();
+    data_structure.Set();
 
     return 0;
 }
