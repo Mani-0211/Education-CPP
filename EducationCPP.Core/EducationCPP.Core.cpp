@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     DataStructure data_structure;
-    data_structure.Set();
+    data_structure.Maps();
 
     return 0;
 }

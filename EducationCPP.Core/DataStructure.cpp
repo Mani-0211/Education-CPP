@@ -4,6 +4,7 @@
 #include <queue>
 #include <deque>
 #include <set>
+#include <map>
 
 #include "DataStructure.h"
 
@@ -216,4 +217,51 @@ void DataStructure::Set()
 	}
 
 	cout << "\n\n";
+}
+
+void DataStructure::Maps()
+{
+	// create a map
+	map<string, int> peoples;
+
+	// add elements
+	peoples.insert({ "pikachu", 101 });
+	peoples.insert({ "mani", 102 });
+	peoples.insert({ "temp", 100 });
+
+	// access elements
+	cout << "value of pikachu - " << peoples.at("pikachu") << "\n";
+	cout << "value of mani - " << peoples.at("mani") << "\n\n";
+
+	// change values
+	peoples.at("temp") = 103;
+
+	cout << "value of temp - " << peoples.at("temp") << "\n\n";
+
+	// remove elements
+	peoples.erase("temp");
+
+	// is the key available in a map or not
+	cout << "is temp available or not - " << peoples.count("temp") << "\n";
+	cout << "is pikachu available or not - " << peoples.count("pikachu") << "\n\n";
+
+	// loop through a map
+	cout << "loop through a map:\n";
+
+	for (auto& people : peoples)
+	{
+		cout << people.first << " - " << people.second << "\n";
+	}
+
+	cout << "\n";
+
+	// is empty? size and clear operations
+	cout << "is empty - " << peoples.empty() << "\n";
+	cout << "size - " << peoples.size() << "\n\n";
+
+	peoples.clear();
+
+	cout << "after cleared a map: \n";
+	cout << "is empty - " << peoples.empty() << "\n";
+	cout << "size - " << peoples.size() << "\n\n";
 }

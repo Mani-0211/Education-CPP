@@ -6,4 +6,5 @@ class DataStructure
 		void Queue();
 		void Deque();
 		void Set();
+		void Maps();
 };
